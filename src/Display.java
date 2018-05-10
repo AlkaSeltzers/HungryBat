@@ -17,7 +17,6 @@ public class Display extends JPanel implements Runnable{
 	 * 
 	 */
 	public Display() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public void run() {
@@ -31,7 +30,9 @@ public class Display extends JPanel implements Runnable{
 	}
 	public void paintComponent(Graphics g) {}
 	public void animation() {}
-	public void keyPressed(KeyEvent e) {} 
+	public void keyPressed(KeyEvent e) {
+		bat.bounce();
+	} 
 
 
 }
