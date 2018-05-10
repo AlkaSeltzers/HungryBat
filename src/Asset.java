@@ -11,7 +11,7 @@ import java.awt.image.BufferedImage;
 
 
 public class Asset {
-	private Position postion;
+	private Position position;
 	private BufferedImage image;
 	
 	/**
@@ -21,22 +21,22 @@ public class Asset {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Asset(Position postion) {
+	public Asset(Position position) {
 		// TODO Auto-generated constructor stub
-		this.postion = postion;
+		this.position = position;
 	}
 	/**
 	 * @return the postion
 	 */
-	public Position getPostion() {
-		return postion;
+	public Position getPosition() {
+		return position;
 	}
 
 	/**
 	 * @param postion the postion to set
 	 */
-	public void setPostion(Position postion) {
-		this.postion = postion;
+	public void setPosition(Position position) {
+		this.position = position;
 	}
 
 	/**
