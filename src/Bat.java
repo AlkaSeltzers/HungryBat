@@ -12,7 +12,7 @@ public class Bat extends Asset {
 	 * 
 	 */
 	public Bat() {
-		// TODO Auto-generated constructor stub
+
 		initialize();
 	}
 	
