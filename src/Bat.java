@@ -3,7 +3,7 @@
  */
 
 /** A Bat is an Asset that maintains information about its position and knows how to bounce and fall
- * @author alka
+ * @author Alka, Subhiksha, Rubaiya
  *
  */
 public class Bat extends Asset {
