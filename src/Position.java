@@ -1,11 +1,11 @@
 
 
 /**
- * 
+ * A Position is an Object that maintains information about its x and y-coordinates. A Position knows how to get and set its x and y-coordinates. 
  */
 
 /**
- * @author alka
+ * @author Alka, Subhiksha, Rubaiya
  *
  */
 public class Position {
@@ -13,29 +13,48 @@ public class Position {
 	private int yPos;
 	
 	/**
-	 * 
+	 * Constructs a Position at (0,0)
 	 */
 	public Position() {
-		// TODO Auto-generated constructor stub
+		this.xPos = 0;
+		this.yPos = 0;
 	}
+	/**
+	 * Constructs a Position at (xPos, yPos)
+	 * @param xPos	initial x-coordinate
+	 * @param yPos	initial y-coordinate 
+	 */
 	public Position(int xPos, int yPos) {
-		// TODO Auto-generated constructor stub
 		this.xPos = xPos;
 		this.yPos = yPos;
 	}
+	/**
+	 * returns the x-coordinate of the Position
+	 * @return	xPos
+	 */
+	 
 	public int getxPos() {
 		return xPos;
 	}
-
-	public void setxPos(int xPos) {
-		this.xPos = xPos;
+        /**
+	 * sets the x-coordinate of the Position to x
+	 * @param x	assigns x to xPos
+	 */
+	public void setxPos(int x) {
+		this.xPos = x;
 	}
-
+        /**
+	 * returns the y-coordinate of the Position
+	 * @return	yPos
+	 */
 	public int getyPos() {
 		return yPos;
 	}
-
-	public void setyPos(int yPos) {
-		this.yPos = yPos;
+	/**
+	 * sets the y-coordinate of the Position to y
+	 * @param y	assigns y to yPos
+	 */
+	public void setyPos(int y) {
+		this.yPos = y;
 	}
 }
