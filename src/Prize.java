@@ -53,6 +53,7 @@ public class Prize extends Asset {
 	}
 	/**
 	 * loops through the rewards and moves their x-coordinates
+	 */
 	public void movePrize() {
 		//iterate through the rewards and move the x position coordinates 
 		addReward();
