@@ -16,7 +16,6 @@ public class Driver extends JFrame{
 	 * Creates a JFrame
 	 */
 	public Driver() {
-		initialize();
 	}
 
 	/**
