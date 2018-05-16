@@ -15,15 +15,46 @@ public class Obstacle extends Asset {
 	 * Constructs an Obstacle
 	 */
 	public Obstacle() {
-		initialize ();
+		if (obstacles == null ) {
+			initialize ();
+		}
+	}
+
+	/**
+	 * @return the obstacles
+	 */
+	public ArrayList<Obstacle> getObstacles() {
+		return obstacles;
+	}
+
+	/**
+	 * @param obstacles the obstacles to set
+	 */
+	public void setObstacles(ArrayList<Obstacle> obstacles) {
+		Obstacle.obstacles = obstacles;
+	}
+
+	/**
+	 * @return the score
+	 */
+	public int getScore() {
+		return score;
+	}
+
+	/**
+	 * @param score the score to set
+	 */
+	public void setScore(int score) {
+		Obstacle.score = score;
 	}
 
 	/**
 	 * initializes barriers of various/random lengths
 	 */
 	public void initialize (){
-		//loop for number of prizes
+		//loop for number of obstacles
 		int i = 0;
+		obstacles = new ArrayList<Obstacle>();
 		while( i < Constants.MAX_OBSTACLES) {
 			addObstacle();
 		}
@@ -34,8 +65,14 @@ public class Obstacle extends Asset {
 	private void addObstacle() {
 		//random algorithm to determine prize location
 		//0, 0 is result of some algorithm needs to be changed
-		Position position = new Position(0,0);
+		
+		int xPos = 600;
+		int yPos = CommonUtils.getRandomInt(100, Constants.FRAME_HEIGHT/2);
+		Position position = new Position(xPos,yPos);	
 		Obstacle obstacle = new Obstacle();
+		obstacle.setPosition(position);
+		obstacle.setImage(CommonUtils.loadImage("pillar.jpg"));
+
 		obstacles.add(obstacle);
 
 	}

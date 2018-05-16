@@ -1,3 +1,8 @@
+import java.awt.image.BufferedImage;
+import java.io.File;
+
+import javax.imageio.ImageIO;
+
 /**
  * 
  */
@@ -19,20 +24,22 @@ public class Bat extends Asset {
 	 * Initializes a bat at Position (0,0)
 	 */
 	public void  initialize(){
-		Position batPos = new Position(0,0);
-		
+		Position batPos = new Position(100,100);
+		setPosition(batPos);
+		setImage(CommonUtils.loadImage("bat.png"));
+			
 	}
 	/*
 	 * Makes the bat bounce upwards by increasing y-coordinate
 	 */
 	public void bounce(){
-		
+		getPosition().setxPos(getPosition().getxPos()+1);
 	}
 	/*
 	 * Makes the bat free fall by decreasing y-coordinate
 	 */
 	public void fall(){
-		
+		getPosition().setxPos(getPosition().getxPos()-1);
 	}
 
 }

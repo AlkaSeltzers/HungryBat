@@ -26,20 +26,19 @@ public class Bat extends Asset {
 	public void  initialize(){
 		Position batPos = new Position(100,100);
 		setPosition(batPos);
-		setImage(CommonUtils.loadImage("bat.png"));
+		setImage(CommonUtils.loadImage("bat.gif"));
 			
 	}
 	/*
 	 * Makes the bat bounce upwards by increasing y-coordinate
 	 */
 	public void bounce(){
-		getPosition().setxPos(getPosition().getxPos()+1);
+		getPosition().setyPos(getPosition().getyPos()-Constants.BOUNCE_HEIGHT);
 	}
 	/*
 	 * Makes the bat free fall by decreasing y-coordinate
 	 */
 	public void fall(){
-		getPosition().setxPos(getPosition().getxPos()-1);
+		getPosition().setyPos(getPosition().getyPos()+1);
 	}
-
 }

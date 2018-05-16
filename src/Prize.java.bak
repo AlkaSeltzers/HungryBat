@@ -56,8 +56,8 @@ public class Prize extends Asset {
 	 */
 	public void movePrize() {
 		//iterate through the prizes and move the x position coordinates 
-		addReward();
-		removeReward();
+		addPrize();
+		removePrize();
 	}
 	
 

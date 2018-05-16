@@ -60,24 +60,7 @@ public class Asset {
 		this.image = img;
 	}
 
-	/**
-	 * @return returns a rectangle with the boundaries of the image
-	 * 
-	 */
-	public Rectangle getRectangleBoundary() {
-		return new Rectangle(getPosition().getxPos(),getPosition().getyPos(),getImage().getWidth(),getImage().getHeight());
-	}
-	
-	/**
-	 * checks if x-coordinates are negative
-	 * @param asset	object
-	 * @return boolean if true then outOfScope
-	 */
-	public boolean outOfScope(Asset asset) {
-		if(asset.getPosition().getxPos() < 0) {
-			return true;
-		}
-		return false;
-	}
+
+
 
 }
